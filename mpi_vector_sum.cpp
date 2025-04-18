@@ -25,7 +25,6 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    // Start timing (only rank 0 tracks the time)
     std::chrono::high_resolution_clock::time_point start;
     if (rank == 0) {
         start = std::chrono::high_resolution_clock::now();
